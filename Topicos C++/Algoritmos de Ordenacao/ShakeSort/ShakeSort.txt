@@ -1,0 +1,49 @@
+Ordenacao Oscilante ou Cocktail Sort: Melhoramento do algoritmo de bolha
+
+Baseia-se no fato de que elementos fora de ordem na extremidade maior vão mais
+rapidamente para sua posição correta que elementos fora de ordem na extremidade
+menor.
+
+Implementa duas versões da bolha em um mesmo algoritmo, 
+uma varrendo da esquerda para a direita e outra da direita para a esquerda.
+
+Nessa implementação, arr é o array que será ordenado e n é o tamanho do array. 
+O algoritmo utiliza uma variável swapped que é inicializada como verdadeira e 
+indica se houve trocas durante a última passagem pela lista. 
+Além disso, são mantidos dois índices start e end que indicam a faixa de elementos que ainda não foram ordenados.
+
+O algoritmo consiste em dois loops principais. 
+O primeiro loop move o maior elemento para a direita da lista, 
+trocando elementos adjacentes que estejam fora de ordem. 
+O segundo loop faz o mesmo, mas movendo o menor elemento para a esquerda. 
+Esses dois loops são executados alternadamente até que 
+nenhuma troca seja realizada em uma passagem completa pela lista. 
+Quando isso acontece, o array está ordenado e o algoritmo termina.
+
+Em casos onde há uma grande quantidade de elementos desordenados no início ou no final da lista, 
+o shakesort pode ser mais rápido do que o bubble sort. 
+Isso ocorre porque o algoritmo move o maior e o menor elemento para suas posições corretas a cada passagem, 
+diminuindo o número de comparações necessárias.
+
+Tanto o bubble sort quanto o shakesort são algoritmos de ordenação que 
+pertencem à categoria de algoritmos de ordenação por comparação. 
+Ambos têm complexidade de tempo O(n^2) no pior caso, 
+o que significa que eles não são adequados para ordenar grandes quantidades de dados.
+
+No entanto, o shakesort é uma variação do bubble sort que pode ser mais eficiente em certas situações. 
+O shakesort melhora o bubble sort ao permitir que os elementos se movam em duas direções diferentes 
+a cada passagem pela lista, enquanto o bubble sort só permite movimentos na direção ascendente.
+
+A principal diferença entre os dois algoritmos é que o shakesort pode ser mais eficiente 
+em casos onde há uma grande quantidade de elementos desordenados no início ou no final da lista. 
+Isso ocorre porque o shakesort move o maior e o menor elemento para suas posições corretas 
+a cada passagem, diminuindo o número de comparações necessárias.
+
+No entanto, em geral, o bubble sort é mais simples e fácil de entender, 
+e pode ser adequado para pequenas quantidades de dados. 
+Por outro lado, o shakesort pode ser mais adequado para listas maiores 
+ou para listas que já estão parcialmente ordenadas.
+
+Em resumo, o shakesort é uma variação do bubble sort que pode ser mais eficiente em certas situações, 
+mas ambos os algoritmos têm complexidade de tempo O(n^2) 
+e não são adequados para ordenar grandes quantidades de dados.

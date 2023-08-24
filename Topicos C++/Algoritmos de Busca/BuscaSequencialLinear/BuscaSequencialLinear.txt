@@ -1,0 +1,22 @@
+Algoritmos de Busca:
+    São métodos para realizar a pesquisa de informações em grandes volumes de dados.
+    Podem ser aplicáveis a arquivos desordenados ou arquivos ordenados.
+    
+    Para arquivos desordenados:
+        Busca sequencial ou linear
+    Para arquivos ordenados:
+        Busca linear otimizada
+        Busca Binária
+
+Busca Sequencial ou Linear:
+    Trata-se de uma varredura realizada de modo sequencial, elemento por elemento,
+    dentro de um determinado conjunto com objetivo de encontrar um determinado valor.
+    
+    Deve retornar a posição do elemento procurado dentro do conjunto, 
+    ou -1 caso o mesmo não se encontre no conjunto.
+
+Melhor caso:    O elemento procurado é o primeiro elemento do conjunto – neste caso apenas um elemento será testado.
+Pior caso  :    O elemento procurado é o último elemento do conjunto - neste caso, todos os elementos serão testados.
+Caso médio :    n/2 elementos serão testados.
+
+Pode ser usada tanto em conjuntos ordenados quanto em desordenados.

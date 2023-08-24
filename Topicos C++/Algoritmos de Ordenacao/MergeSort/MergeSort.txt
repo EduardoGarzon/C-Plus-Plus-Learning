@@ -1,0 +1,33 @@
+MergeSort:
+
+Usa o método de divisão e conquista
+
+Divide o conjunto de dados a serem ordenados em dois conjuntos menores, com a metade do tamanho.
+Continua dividindo o conjunto recursivamente até que cada conjunto tenha apenas 1 elemento (portanto, ordenado).
+Retorna da recursividade combinando as partes já ordenadas (merge).
+
+Esse algoritmo divide o problema em pedaços menores, 
+resolve cada pedaço e depois junta (merge) os resultados. 
+O vetor será dividido em duas partes iguais, 
+que serão cada uma divididas em duas partes, 
+e assim até ficar um ou dois elementos cuja ordenação é trivial.
+
+Para juntar as partes ordenadas os dois elementos de cada parte são separados 
+e o menor deles é selecionado e retirado de sua parte. 
+Em seguida os menores entre os restantes são comparados e assim se prossegue até juntar as partes.
+
+Inicialmente temos um array de 6 inteiros não ordenados Arr(5, 8, 3, 9, 1, 2)
+Dividimos o array em duas metades Arr1 = (5, 8, 3) e Arr2 = (9, 1, 2).
+Novamente, nós os dividimos em duas metades: Arr3 = (5, 8) e Arr4 = (3) e Arr5 = (9, 1) e Arr6 = (2).
+Novamente, nós os dividimos em duas metades: Arr7 = (5), Arr8 = (8), Arr9 = (9), Arr10 = (1) e Arr6 = (2).
+Vamos agora comparar os elementos nesses sub-arrays para mesclá-los.
+
+Vantagens:
+    Seu tempo de execução é logartmico (n log n).
+    Não é estável, mas pode ser convertido para tal, tomando cuidado na intercalação.
+    Fácil implementação.
+Desvantagens:
+    Utiliza memória auxiliar.
+    Mais lento que o quicksort no caso médio.
+
+

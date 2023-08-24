@@ -1,0 +1,17 @@
+Busca Binaria:
+
+Utiliza o método de divisão e conquista para acelerar o tempo médio de busca.
+Somente pode ser aplicado a conjuntos ordenados
+
+O primeiro elemento a ser testado é o elemento central do conjunto. 
+Se o elemento procurado for igual, retorna-se o valor da posição do elemento central, 
+caso contrário, verifica-se duas outras situações:
+    a.  O elemento procurado é menor que o elemento central: a busca deverá prosseguir na metade
+        inferior ao elemento central
+    b.  O elemento procurado é maior que o elemento central: 
+        a busca deverá prosseguir na metade superior ao elemento central.
+    c.  O procedimento deve ser chamado recursivamente para a metade apropriada.
+
+Melhor caso:    O elemento procurado é o elemento central – apenas um elemento é verificado.
+Pior caso  :    O elemento não existe - são verificados log" 𝑛 elementos.
+Caso médio :    O mesmo que o pior caso.

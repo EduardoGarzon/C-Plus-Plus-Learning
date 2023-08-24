@@ -1,0 +1,49 @@
+Ordenacao Bolha.
+
+Ordenacao por trocas.
+
+Examina sistematicamente elementos adjacentes de um conjunto e troca suas posicoes se for necessario.
+
+Compara cada elemento da lista com o elemento seguinte.
+
+O processo se repete ate que toda a lista esteja ordenada.
+
+Assim como as bolhas sobem do fundo de um copo, bubble sort é um algoritmo simples que ordena uma lista, permitindo que valores mais baixos ou mais altos borbulhem até o topo.
+
+A ordenação por bolhas é muito lenta em comparação com outros algoritmos de ordenação como o quicksort. 
+
+A vantagem é que é um dos algoritmos de ordenação mais fáceis de entender e implementar do zero.
+
+O bubble sort é razoável para ordenar arrays de tamanho pequeno ou, especialmente, ao executar algoritmos de ordenação em computadores com recursos de memória notavelmente limitados.
+
+---------- EXEMPLO ----------:
+    1. Primeira passagem pela lista:
+        Começando com [4, 2, 6, 3, 9], o algoritmo compara os dois primeiros elementos no array, 4 e 2. 
+        Ele os troca porque 2 < 4: [2, 4, 6, 3, 9]
+
+    2. Ele compara os dois próximos valores, 4 e 6. 
+        Como 4 < 6, e estes já estão em ordem, o algoritmo segue em frente: [2, 4, 6, 3, 9]
+
+    3. Os próximos dois valores são trocados, porque 3 < 6: [2, 4, 3, 6, 9]
+
+    4. Os dois últimos valores, 6 e 9, já estão em ordem, então o algoritmo não os troca.
+
+    5. Segunda passagem pela lista:
+        2 < 4, então não há necessidade de trocar as posições: [2, 4, 3, 6, 9]
+
+    6. O algoritmo troca os próximos dois valores, porque 3 < 4: [2, 3, 4, 6, 9]
+
+    7. Sem trocas, porque 4 < 6: [2, 3, 4, 6, 9]
+
+    8. Novamente, 6 < 9, logo, nenhuma troca ocorre: [2, 3, 4, 6, 9]
+
+    A lista já está ordenada, mas o algoritmo bubble sort não percebe isso. 
+    Em vez disso, ele precisa concluir uma passagem inteira pela lista sem trocar nenhum valor para saber que a lista está ordenada.
+
+    9. Terceira passagem pela lista:
+        [2, 4, 3, 6, 9] => [2, 4, 3, 6, 9]
+        [2, 4, 3, 6, 9] => [2, 4, 3, 6, 9]
+        [2, 4, 3, 6, 9] => [2, 4, 3, 6, 9]
+        [2, 4, 3, 6, 9] => [2, 4, 3, 6, 9]
+
+    Claramente bubble sort está longe de ser o algoritmo de ordenação mais eficiente. Ainda assim, é simples entender e implementar você mesmo.

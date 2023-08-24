@@ -1,0 +1,89 @@
+Insertion Sort ou ordenação por inserção 
+
+Método que percorre um vetor de elementos da esquerda para a direita e 
+à medida que avança vai ordenando os elementos à esquerda.
+
+É considerado um método de ordenação estável.
+Um método de ordenação é estável se a ordem relativa dos itens iguais não se altera durante a ordenação.
+
+O Insertion sort é um algoritmo simples e eficiente quando aplicado em pequenas listas.
+
+O funcionamento do algoritmo é bem simples: 
+    consiste em cada passo a partir do segundo elemento selecionar o próximo item da sequência e 
+    colocá-lo no local apropriado de acordo com o critério de ordenação.
+
+Em relação aos outros algoritmos de ordenação mencionados, o Insertion Sort tem algumas vantagens e desvantagens.
+
+Uma vantagem do Insertion Sort é que ele é simples de entender e implementar. Ele é particularmente eficiente para conjuntos de dados pequenos e quase ordenados. Ele também é eficiente em conjuntos de dados que são adicionados continuamente, pois ele pode inserir novos elementos na posição correta à medida que eles são adicionados.
+
+No entanto, o Insertion Sort não é tão eficiente quanto outros algoritmos de ordenação para conjuntos de dados maiores ou desordenados. Isso ocorre porque, à medida que o tamanho da matriz aumenta, o número de comparações e movimentos necessários para inserir cada elemento aumenta.
+
+Em comparação com o Bubble Sort, o Insertion Sort é geralmente mais eficiente. Isso ocorre porque o Bubble Sort compara e troca elementos adjacentes repetidamente, o que é ineficiente em conjuntos de dados maiores. Já o Insertion Sort insere cada elemento em sua posição correta uma única vez, o que geralmente é mais rápido.
+
+Em comparação com o Shake Sort, o Insertion Sort pode ser mais lento em alguns casos. Isso ocorre porque o Shake Sort pode mover elementos rapidamente para suas posições corretas em cada passagem, enquanto o Insertion Sort requer uma busca para encontrar a posição correta para cada elemento. No entanto, em conjuntos de dados quase ordenados ou pequenos, o Insertion Sort pode ser mais rápido.
+
+Em relação ao Selection Sort, o Insertion Sort é geralmente mais eficiente, pois faz menos comparações e movimentos. O Selection Sort precisa encontrar o menor elemento em cada passagem e trocá-lo com o primeiro elemento, enquanto o Insertion Sort pode inserir cada elemento em sua posição correta sem a necessidade de trocas.
+
+Em resumo, o Insertion Sort é uma boa escolha para conjuntos de dados pequenos ou quase ordenados, mas pode ser menos eficiente em conjuntos de dados grandes ou desordenados. Em comparação com o Bubble Sort e o Selection Sort, o Insertion Sort é geralmente mais eficiente, enquanto em comparação com o Shake Sort, depende do tipo de conjunto de dados.
+
+No pior caso, o método de inserção é tão ruim quanto a bolha e a seleção.
+Para o caso médio é um pouco melhor.
+Suas principais vantagens:
+      Tem comportamento natural (bom para conjuntos quase ordenados)
+      Não rearranja elementos que possuam chaves iguais
+Desvantagem
+      O vetor precisa ser deslocado cada vez que um elemento é posto na sua posição correta.
+
+---------- EXEMPLO ----------:
+
+Comece do índice 1 até o tamanho do array de entrada: [ 8 3 5 1 4 2 ]
+
+chave = 3 //começando no índice 1.
+
+      Aqui a `chave` será comparada com os elementos anteriores.
+
+      Neste caso, `chave` é comparada com 8. Como 8 > 3, movemos o elemento 8 para a próxima posição e inserimos a `chave` na posição anterior.
+
+      Resultado: [ 3 8 5 1 4 2 ]
+
+chave = 5 //índice 2
+
+      8 > 5 //movemos o 8 para o índice 2 e inserimos o 5 no índice 1.
+
+      Resultado: [ 3 5 8 1 4 2 ]
+
+chave = 1 //índice 3
+
+      8 > 1     => [ 3 5 1 8 4 2 ]  
+
+      5 > 1     => [ 3 1 5 8 4 2 ]
+
+      3 > 1     => [ 1 3 5 8 4 2 ]
+
+      Resultado: [ 1 3 5 8 4 2 ]
+
+chave = 4 //índice 4
+
+      8 > 4   => [ 1 3 5 4 8 2 ]
+
+      5 > 4   => [ 1 3 4 5 8 2 ]
+
+      3 > 4   ≠>  pare
+
+      Resultado: [ 1 3 4 5 8 2 ]
+
+chave = 2 //índice 5
+
+      8 > 2   => [ 1 3 4 5 2 8 ]
+
+      5 > 2   => [ 1 3 4 2 5 8 ]
+
+      4 > 2   => [ 1 3 2 4 5 8 ]
+
+      3 > 2   => [ 1 2 3 4 5 8 ]
+
+      1 > 2   ≠> pare
+
+      Resultado: [1 2 3 4 5 8]
+
+

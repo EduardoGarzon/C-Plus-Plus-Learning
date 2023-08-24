@@ -1,0 +1,20 @@
+O ShellSort é um algoritmo de ordenação que se baseia no algoritmo de inserção. 
+divide a matriz em subgrupos menores para realizar a ordenação. 
+A cada iteração, os subgrupos são reduzidos até que a matriz inteira seja ordenada. 
+A implementação do ShellSort pode variar, sendo que a inserção melhorada é uma das versões mais eficientes.
+
+A ideia por trás da inserção melhorada é reduzir o número de deslocamentos de elementos necessários em cada iteração, diminuindo a complexidade de tempo do algoritmo. 
+
+Para isso, ao invés de deslocar todos os elementos que são maiores que o elemento a ser inserido, a inserção melhorada procura a posição correta para o elemento a ser inserido e, em seguida, desloca apenas os elementos necessários para criar espaço para o novo elemento.
+
+O tempo de execução do ShellSort com a inserção melhorada é de O(n^2) no pior caso, 
+mas, em média, ele é mais rápido do que o algoritmo de inserção direta e é considerado um dos algoritmos de ordenação mais eficientes. 
+
+Ele pode ser útil em situações em que a matriz a ser ordenada é grande e precisa ser ordenada rapidamente.
+
+Vantagens:
+    Boa opção para arquivos de tamanho moderado.
+    Implementação simples.
+Desvantagens:
+    Tempo de execução sensível à ordem inicial do arquivo.
+    Não é estável.

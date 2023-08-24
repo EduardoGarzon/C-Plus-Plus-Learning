@@ -1,0 +1,61 @@
+QuickSort: 
+
+O Quicksort é um algoritmo de ordenação que segue a abordagem "dividir para conquistar", 
+ou seja, divide a lista em partes menores e as ordena separadamente. 
+
+O Quicksort seleciona um elemento da lista, chamado de pivô, 
+e rearranja os elementos da lista de forma que todos os elementos menores que o pivô fiquem antes dele na lista, 
+e todos os elementos maiores que o pivô fiquem depois dele na lista. 
+
+O pivô então fica em sua posição final na lista ordenada. 
+Esse processo é aplicado recursivamente para as sublistas formadas antes e depois do pivô, 
+até que toda a lista esteja ordenada.
+
+Criado por Hoare em 1960 e publicado em 1962.
+    É o algoritmo de ordenação mais rápido que se conhece para aplicações gerais, sendo o mais usado.
+
+Também é baseado em divisão e conquista: 
+    Divide-se o conjunto em conjuntos menores, que são ordenados recursivamente, provocando divisões
+    consecutivas até chegar a um subconjunto unitário.
+    Depois os conjuntos são recombinados para gerar a ordenação final.
+    Melhoramento no método básico de ordenação por permutação (bolha!)
+
+Basicamente a operação do algoritmo pode ser resumida na seguinte estratégia: 
+    divide sua lista de entrada em duas sub-listas a partir de um pivô, 
+    para em seguida realizar o mesmo procedimento nas duas listas menores até uma lista unitária.
+
+A divisão é feita com base na escolha arbitrária de um pivô:
+    O vetor é particionado em:
+        Elementos <= que o pivô
+        Elementos >= que o pivô
+
+    O algoritmo consiste em percorrer o conjunto a partir da esquerda até o pivô, 
+    e a partir da direita até o pivô.
+
+    Quando um elemento maior ou igual que o pivô for encontrado à sua esquerda, 
+    procure um menor ou igual que o pivô na sua direita e troque;
+
+    Repita até que os índices usados para varrer o vetor se cruzem.
+    Chame o algoritmo recursivamente para as partes anterior e posterior ao pivô.
+
+Vantagens:
+    Extremamente eficiente para ordenar arquivos de dados
+    Usa apenas uma pequena pilha como memória auxiliar
+    Requer 𝑛 log 𝑛 comparações em média para ordenar 𝑛 itens
+Desvantagens:
+    Pior caso: 𝐶 = 𝑛!
+    Implementação mais complicada
+    Não é estável.
+
+Funcionamento do algoritmo:
+    1.  Escolhe um elemento da lista chamado pivô.
+    2.  Reorganiza a lista de forma que os elementos menores que o pivô fiquem de um lado, 
+        e os maiores fiquem de outro. Esta operação é chamada de “particionamento”.
+    3.  Recursivamente ordena a sub-lista abaixo e acima do pivô.
+
+As etapas envolvidas no Quick Sort são:
+    1.  Escolha um elemento para servir como pivô, neste caso, o último elemento do array é o pivô.
+    2.  Particionamento: Ordene o array de forma que todos os elementos menores que o pivô 
+        fiquem à esquerda e todos os elementos maiores que o pivô fiquem à direita.
+    3.  Execute o algoritmo recursivamente, levando em consideração o pivô anterior para subdividir 
+        adequadamente os arrays esquerdo e direito.

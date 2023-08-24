@@ -1,0 +1,23 @@
+A ordenação por seleção ou selection sort 
+
+Consiste em selecionar o menor item e colocar na primeira posição, 
+selecionar o segundo menor item e colocar na segunda posição, 
+segue estes passos até que reste um único elemento.não é um algoritmo estável.
+
+Neste algoritmo de ordenação é escolhido um número a partir do primeiro, 
+este número escolhido é comparado com os números a partir da sua direita, 
+quando encontrado um número menor, o número escolhido ocupa a posição do menor número encontrado. 
+Este número encontrado será o próximo número escolhido, 
+caso não for encontrado nenhum número menor que este escolhido, 
+ele é colocado na posição do primeiro número escolhido, 
+e o próximo número à sua direita vai ser o escolhido para fazer as comparações. 
+É repetido esse processo até que a lista esteja ordenada.
+
+O Selectionsort tem uma complexidade assintótica de O(n²), assim como o Bubblesort e o Shakesort. 
+No entanto, o Selectionsort é geralmente mais rápido do que o Bubblesort e o Shakesort na maioria dos casos de uso, devido ao menor número de trocas realizadas.
+
+Apesar disso, o Selectionsort é geralmente considerado mais eficiente do que o Bubblesort e o Shakesort 
+porque realiza menos trocas e percorre a lista menos vezes. 
+O Bubblesort e o Shakesort são algoritmos mais simples e fáceis de entender e implementar, 
+mas podem ser menos eficientes para listas grandes.
+
