@@ -1,0 +1,9 @@
+O algoritmo KMP (Knuth-Morris-Pratt) é um método eficiente para encontrar ocorrências de uma string padrão em uma string texto. Desenvolvido por Donald Knuth, Vaughan Pratt e James H. Morris, o KMP é notável por sua capacidade de realizar essa busca em tempo linear, ou seja, O(n + m), onde n é o tamanho do texto e m é o tamanho do padrão.
+
+A principal inovação do KMP é o uso de um preprocessamento do padrão para criar uma tabela de "falhas" ou "prefixo-sufixo" (conhecida como tabela de falhas ou "prefix table"). Essa tabela armazena informações sobre os deslocamentos dentro do próprio padrão, permitindo que o algoritmo evite a repetição desnecessária de comparações.
+
+O funcionamento do KMP pode ser dividido em duas etapas principais: a construção da tabela de falhas e a fase de busca. Na primeira etapa, a tabela de falhas é construída em O(m) tempo, analisando o padrão e determinando os maiores prefixos que também são sufixos para cada posição no padrão. Isso facilita a determinação de quantos caracteres podem ser ignorados ao encontrar uma falha durante a busca no texto.
+
+Na fase de busca, o algoritmo percorre o texto e compara o padrão a cada posição. Se uma discrepância é encontrada, a tabela de falhas é consultada para determinar quantos caracteres podem ser pulados, permitindo que o padrão seja realinhado de maneira eficiente. Isso significa que o algoritmo não retrocede no texto, mas avança sempre que possível, o que garante o tempo linear de execução.
+
+A eficiência do KMP advém dessa habilidade de evitar comparações redundantes, tornando-o especialmente útil em aplicações onde a busca de padrões é frequente e o desempenho é crucial. Além de ser um marco teórico importante na ciência da computação, o algoritmo KMP tem diversas aplicações práticas, incluindo editores de texto, buscas em DNA, e outras áreas que requerem buscas rápidas e eficientes de subcadeias em cadeias maiores.
